@@ -1,0 +1,36 @@
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.product-item {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.product-name {
+  font-weight: 500;
+}
+
+.product-calories {
+  color: var(--primary-color);
+}
+
+.product-macros {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}

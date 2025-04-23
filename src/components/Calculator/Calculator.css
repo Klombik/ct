@@ -1,0 +1,165 @@
+.calculator {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.calculator__left,
+.calculator__right {
+  flex: 1;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calculator__subtitle {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.calculator__search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.calculator__product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calculator__product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.calculator__product-name {
+  font-weight: 500;
+}
+
+.calculator__product-calories {
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+
+.calculator__add-button {
+  background-color: var(--success-color);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.calculator__empty {
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 20px;
+}
+
+.calculator__selected-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.calculator__selected-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--gray-light);
+  border-radius: 4px;
+}
+
+.calculator__selected-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.calculator__selected-quantity {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.calculator__selected-unit {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.calculator__remove-button {
+  background-color: var(--danger-color);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.calculator__total {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.calculator__total-calories {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.calculator__save-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.calculator__meal-name {
+  margin-bottom: 1rem;
+}
+
+.calculator__meal-name label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.calculator__meal-name input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .calculator {
+    flex-direction: column;
+  }
+}

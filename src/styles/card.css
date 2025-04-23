@@ -1,0 +1,28 @@
+.card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  transition: var(--transition);
+  margin-bottom: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card__title {
+  color: var(--primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.card__divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gray), transparent);
+  margin: 1rem 0;
+}

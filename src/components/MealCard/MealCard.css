@@ -1,0 +1,134 @@
+.meal-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.meal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.meal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.meal-time {
+  font-size: 14px;
+  color: #6c757d;
+  margin-right: 15px;
+}
+
+.meal-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  flex-grow: 1;
+  color: #2b2d42;
+}
+
+.meal-calories {
+  font-weight: 700;
+  color: #4361ee;
+}
+
+.meal-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.meal-item {
+  padding: 8px 0;
+}
+
+.meal-item-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.hidden-checkbox {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #dee2e6;
+  border-radius: 6px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.custom-checkbox.checked {
+  background: #4361ee;
+  border-color: #4361ee;
+}
+
+.check-icon {
+  color: white;
+  font-size: 14px;
+}
+
+.item-name {
+  flex-grow: 1;
+  font-size: 15px;
+}
+
+.item-name.completed {
+  text-decoration: line-through;
+  color: #adb5bd;
+}
+
+.item-calories {
+  font-size: 14px;
+  color: #6c757d;
+  margin-left: 10px;
+}
+
+.meal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #6c757d;
+}
+
+.icon-btn:hover {
+  background: #f8f9fa;
+}
+
+.edit-btn:hover {
+  color: #4361ee;
+}
+
+.delete-btn:hover {
+  color: #ef233c;
+}

@@ -1,0 +1,33 @@
+.home-page__title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+.home-page__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.home-page__card {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.home-page__card:hover {
+  transform: translateY(-5px);
+}
+
+.home-page__card-title {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.home-page__card-text {
+  color: var(--text-color);
+  line-height: 1.6;
+}
